@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 40">
+  <rect x="0" y="0" width="17" height="17" fill="#f25022"/>
+  <rect x="19" y="0" width="17" height="17" fill="#7fba00"/>
+  <rect x="0" y="19" width="17" height="17" fill="#00a4ef"/>
+  <rect x="19" y="19" width="17" height="17" fill="#ffb900"/>
+  <text x="46" y="31" font-family="'Segoe UI',Arial,sans-serif" font-size="34" font-weight="600" fill="#5e5e5e">Microsoft</text>
+</svg>
