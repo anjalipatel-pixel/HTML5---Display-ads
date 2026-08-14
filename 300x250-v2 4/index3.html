@@ -153,7 +153,7 @@
             <span class="gs-stars">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span>
             <span class="rev-score-row">
               <span class="rev-score">4.3</span>
-              <span class="rev-count">(5147)</span>
+              <span class="rev-count">(128)</span>
             </span>
             <span class="rev-bar"></span>
           </div>
@@ -306,14 +306,10 @@
         flabel.textContent = f.label;
         fdots.forEach(function (d, k) { d.classList.toggle('is-active', k === fi); });
 
-        // restart the card's pop/slide keyframe on every feature change,
-        // except the very first one — the slide's own entrance animation
-        // already plays then, so replaying this too caused a double-pop
-        if (fi > 0) {
-          fcard.classList.remove('f-swap');
-          void fcard.offsetWidth;
-          fcard.classList.add('f-swap');
-        }
+        // restart the card's pop/slide keyframe on every feature change
+        fcard.classList.remove('f-swap');
+        void fcard.offsetWidth;
+        fcard.classList.add('f-swap');
 
         var text = f.text;
         ftext.textContent = '';
