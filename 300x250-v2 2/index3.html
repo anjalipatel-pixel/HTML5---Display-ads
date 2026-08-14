@@ -335,7 +335,18 @@
         clearTimers();
         scenes.forEach(function (s, k) { s.classList.toggle('on', k === i); });
         ad.setAttribute('data-scene', i);
-        if (i === 1) later(function () { typeFeature(0); }, 500);
+        if (i === 1) {
+          // reset the card to the first feature immediately so a repeat loop
+          // never flashes the previous cycle's last feature (Meta) before
+          // the typewriter sequence restarts
+          fcard.setAttribute('data-f', 0);
+          fcard.classList.remove('f-swap');
+          ficon.src = FEATURES[0].icon;
+          flabel.textContent = FEATURES[0].label;
+          ftext.textContent = '';
+          fdots.forEach(function (d, k) { d.classList.toggle('is-active', k === 0); });
+          later(function () { typeFeature(0); }, 500);
+        }
         later(function () { show((i + 1) % scenes.length); }, DUR[i]);
       }
 
