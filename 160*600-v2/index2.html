@@ -3,14 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=300">
-  <meta name="ad.size" content="width=300,height=250">
-  <title>Simprosys - What's New 300x250</title>
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"> -->
+  <meta name="viewport" content="width=160">
+  <meta name="ad.size" content="width=160,height=600">
+  <title>Simprosys - What's New 160x600</title>
   <link rel="stylesheet" href="css/style2.css">
 </head>
 
@@ -25,10 +20,10 @@
 
       <!-- ============ SCENE 1: What's New Since You Left? ============ -->
       <section class="scene s1 on">
-        <span class="chip c1"><img src="image/AI_without_star.svg" alt="AI" /></span>
-        <span class="chip c2"><img src="image/Google logo.svg" alt="Google" /></span>
-        <span class="chip c3"><img src="image/Meta logo.svg" alt="Meta" /></span>
-        <span class="chip c5"><img src="image/Microsoft Logo.svg" alt="Microsoft" /></span>
+        <span class="chip c1"><img src="image/aiNewIcon.svg" alt="AI" /></span>
+        <span class="chip c2"><img src="image/Google Text Logo.svg" alt="Google" /></span>
+        <span class="chip c3"><img src="image/Meta logo.svg" alt="Meta" /><span class="c3-text">Meta</span></span>
+        <span class="chip c5"><img src="image/msAdLogo.png" alt="Microsoft Advertising" /></span>
         <div class="s1-copy">
           <h1>What&rsquo;s <em>New</em><br>Since You Left?</h1>
           <div class="rot">
@@ -49,7 +44,7 @@
             <div class="f-card" id="fcard" data-f="0">
               <span class="f-tag" id="ftag">New</span>
               <span class="f-glow"></span>
-              <span class="f-badge"><img id="ficon" src="image/AI_without_star.svg" alt="" /></span>
+              <span class="f-badge"><img id="ficon" src="image/aiNewIcon.svg" alt="" /></span>
               <span class="f-copy">
                 <span class="f-label" id="flabel">AI&#8209;Powered</span>
                 <span class="f-line"><span class="f-text" id="ftext"></span></span>
@@ -117,7 +112,7 @@
             <span class="gs-name">Men&rsquo;s Running Shoes</span>
             <span class="gs-price">$59.99</span>
             <span class="gs-ship gs-ship--corner">
-              <svg width="12" height="10" viewBox="0 0 24 18" fill="none">
+              <svg width="14" height="12" viewBox="0 0 24 18" fill="none">
                 <path d="M1 3h13v10H1z" stroke="currentColor" stroke-width="1.6" fill="none" />
                 <path d="M14 7h5l3 3v3h-8z" stroke="currentColor" stroke-width="1.6" fill="none"
                   stroke-linejoin="round" />
@@ -140,10 +135,10 @@
             <span class="gs-price">$59.99</span>
             <span class="gs-stars gs-stars--sm">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span>
           </div>
-          <svg class="rev-arrow-straight" width="64" height="72" viewBox="0 0 64 72">
-            <path class="rc-line" d="M3 58Q22 60 30 36Q38 12 47 12" stroke="#0d2f47" stroke-width="2.8"
+          <svg class="rev-arrow-straight" width="48" height="64" viewBox="0 0 48 64">
+            <path class="rc-line" d="M24 4Q6 20 15 34Q24 48 24 58" stroke="#0d2f47" stroke-width="2.8"
               stroke-linecap="round" fill="none" />
-            <polygon class="rc-head" points="46,5 61,12 46,19" />
+            <polygon class="rc-head" points="17,52 24,66 31,52" />
           </svg>
           <div class="rev-badge">
             <span class="rev-badge-head">
@@ -153,7 +148,7 @@
             <span class="gs-stars">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span>
             <span class="rev-score-row">
               <span class="rev-score">4.3</span>
-              <span class="rev-count">(128)</span>
+              <span class="rev-count">(5147)</span>
             </span>
             <span class="rev-bar"></span>
           </div>
@@ -179,7 +174,7 @@
                 <span class="disc-rating-score">4.3</span>
               </span>
               <span class="disc-tap"></span>
-              <svg class="disc-cursor" width="20" height="20" viewBox="0 0 24 24" fill="#0d2f47" stroke="#ffffff"
+              <svg class="disc-cursor" width="22" height="22" viewBox="0 0 24 24" fill="#0d2f47" stroke="#ffffff"
                 stroke-width="0.8">
                 <path
                   d="M9.5 3.2c.7 0 1.3.6 1.3 1.3v5.3l.7-.2c.6-.2 1.2-.1 1.7.2.5.3.8.8.9 1.4l.1.6 1-.2c.6-.1 1.2 0 1.7.4.5.3.8.9.8 1.5v1.7c0 2.6-2.1 4.8-4.8 4.8h-1.6c-1.6 0-3.1-.8-4-2.1l-2-2.9c-.5-.7-.3-1.6.4-2.1.6-.4 1.4-.3 1.9.2l1.1 1.1V4.5c0-.7.6-1.3 1.3-1.3z" />
@@ -275,10 +270,10 @@
       var flabel = document.getElementById('flabel');
       var fdots = document.querySelectorAll('.f-dot');
 
-      var DUR = [4400, 9100, 5000, 2900, 3100, 4500];
+      var DUR = [4400, 9100, 8500, 2900, 3100, 4500];
 
       var FEATURES = [
-        { icon: 'image/AI_without_star.svg', label: 'AI‑Powered', text: 'Feed Optimisation using AI' },
+        { icon: 'image/aiNewIcon.svg', label: 'AI‑Powered', text: 'Feed Optimisation using AI' },
         { icon: 'image/Target icon.svg', label: 'Smart Targeting', text: 'Customer Match List' },
         { icon: 'image/Google Business logo.svg', label: 'Local Reach', text: 'Google Local Inventory' },
         { icon: 'image/Meta logo.svg', label: 'Meta Sync', text: 'WooCommerce Category as Facebook Sets' }
@@ -306,10 +301,14 @@
         flabel.textContent = f.label;
         fdots.forEach(function (d, k) { d.classList.toggle('is-active', k === fi); });
 
-        // restart the card's pop/slide keyframe on every feature change
-        fcard.classList.remove('f-swap');
-        void fcard.offsetWidth;
-        fcard.classList.add('f-swap');
+        // restart the card's pop/slide keyframe on every feature change,
+        // except the very first one — the slide's own entrance animation
+        // already plays then, so replaying this too caused a double-pop
+        if (fi > 0) {
+          fcard.classList.remove('f-swap');
+          void fcard.offsetWidth;
+          fcard.classList.add('f-swap');
+        }
 
         var text = f.text;
         ftext.textContent = '';
@@ -331,7 +330,18 @@
         clearTimers();
         scenes.forEach(function (s, k) { s.classList.toggle('on', k === i); });
         ad.setAttribute('data-scene', i);
-        if (i === 1) later(function () { typeFeature(0); }, 500);
+        if (i === 1) {
+          // reset the card to the first feature immediately so a repeat loop
+          // never flashes the previous cycle's last feature (Meta) before
+          // the typewriter sequence restarts
+          fcard.setAttribute('data-f', 0);
+          fcard.classList.remove('f-swap');
+          ficon.src = FEATURES[0].icon;
+          flabel.textContent = FEATURES[0].label;
+          ftext.textContent = '';
+          fdots.forEach(function (d, k) { d.classList.toggle('is-active', k === 0); });
+          later(function () { typeFeature(0); }, 500);
+        }
         later(function () { show((i + 1) % scenes.length); }, DUR[i]);
       }
 
