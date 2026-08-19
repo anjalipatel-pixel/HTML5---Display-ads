@@ -20,18 +20,20 @@
 
       <!-- ============ SCENE 1: What's New Since You Left? ============ -->
       <section class="scene s1 on">
-        <span class="chip c1"><img src="image/aiNewIcon.svg" alt="AI" /></span>
-        <span class="chip c2"><img src="image/Google Text Logo.svg" alt="Google" /></span>
-        <span class="chip c3"><img src="image/Meta logo.svg" alt="Meta" /><span class="c3-text">Meta</span></span>
-        <span class="chip c5"><img src="image/msAdLogo.png" alt="Microsoft Advertising" /></span>
-        <div class="s1-copy">
-          <h1>What&rsquo;s <em>New</em><br>Since You Left?</h1>
-          <div class="rot">
-            <span class="rot-stack">
-              <span class="rw rw1">More <em>Features.</em></span>
-              <span class="rw rw2">More <em>Possibilities.</em></span>
-              <span class="rw rw3">More <em>Reasons to Come Back.</em></span>
-            </span>
+        <div class="s1-stack">
+          <span class="chip c1"><img src="image/aiNewIcon.svg" alt="AI" /></span>
+          <span class="chip c2"><img src="image/Google Text Logo.svg" alt="Google" /></span>
+          <span class="chip c5"><img src="image/msAdLogo.png" alt="Microsoft Advertising" /></span>
+          <span class="chip c3"><img src="image/Meta logo.svg" alt="Meta" /><span class="c3-text">Meta</span></span>
+          <div class="s1-copy">
+            <h1>What&rsquo;s <em>New</em><br>Since You Left?</h1>
+            <div class="rot">
+              <span class="rot-stack">
+                <span class="rw rw1">More <em>Features.</em></span>
+                <span class="rw rw2">More <em>Possibilities.</em></span>
+                <span class="rw rw3">More <em>Reasons to Come Back.</em></span>
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -73,7 +75,7 @@
               <img src="image/Shoes.svg" alt="Product" />
               <span class="opt-scan">
                 <span class="scan-beam"></span>
-                <img class="scan-ai" src="image/AI-org.svg" alt="AI" />
+                <img class="scan-ai" src="image/aiNewIcon.svg" alt="AI" />
               </span>
             </div>
             <span class="opt-tags">
@@ -135,10 +137,10 @@
             <span class="gs-price">$59.99</span>
             <span class="gs-stars gs-stars--sm">&#9733;&#9733;&#9733;&#9733;<i>&#9733;</i></span>
           </div>
-          <svg class="rev-arrow-straight" width="48" height="64" viewBox="0 0 48 64">
-            <path class="rc-line" d="M24 4Q6 20 15 34Q24 48 24 58" stroke="#0d2f47" stroke-width="2.8"
+          <svg class="rev-arrow-straight" width="38" height="46" viewBox="0 0 38 46">
+            <path class="rc-line" d="M19 3C8 10 8 25 19 33" stroke="#0d2f47" stroke-width="2.8"
               stroke-linecap="round" fill="none" />
-            <polygon class="rc-head" points="17,52 24,66 31,52" />
+            <polygon class="rc-head" points="11,32 19,43 27,32" />
           </svg>
           <div class="rev-badge">
             <span class="rev-badge-head">
@@ -270,7 +272,7 @@
       var flabel = document.getElementById('flabel');
       var fdots = document.querySelectorAll('.f-dot');
 
-      var DUR = [4400, 9100, 8500, 2900, 3100, 4500];
+      var DUR = [4400, 7700, 5100, 3400, 3700, 5200];
 
       var FEATURES = [
         { icon: 'image/aiNewIcon.svg', label: 'AI‑Powered', text: 'Feed Optimisation using AI' },
@@ -281,7 +283,7 @@
 
       // Slower, easier-to-read typing speed + generous per-feature dwell time
       var TYPE_MS = 35;
-      var HOLDS = [1200, 1300, 1200, 1155];
+      var HOLDS = [850, 900, 850, 1155];
 
       var timers = [];
       function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
